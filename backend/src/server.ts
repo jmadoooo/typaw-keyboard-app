@@ -4,8 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 
-// Load .env from project root (one directory up from backend/)
-dotenv.config({ path: path.join(process.cwd(), "../.env") });
+// Load .env from backend directory
+dotenv.config();
 
 import authRoutes from "./routes/authRoutes";
 import studentRoutes from "./routes/studentRoutes";
